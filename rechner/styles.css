@@ -1,0 +1,103 @@
+body{
+    background-image: url("https://images.pexels.com/photos/5638748/pexels-photo-5638748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #FED8B1;
+    min-height: 100vh;
+}
+
+#container{
+    background-color:rgba(128, 115, 93, 0.9);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 825px;
+    border-radius: 35px;
+    color: #F8F4E1;
+}
+
+.images{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+form,h1,input,.tip,#btn,#addTip,#billSplit,#totalTip,#totalAmount{
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 20px;
+}
+
+h1{
+    align-self: center;
+    color: #F1E5D1;
+    font: 30px;
+}
+
+input{
+    padding: 7px;
+}
+
+#addTip,#btn{
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+#addTip{
+    background-color: #FDE49E;
+}
+
+#btn{
+    background-color: #CAF4FF;
+    margin-top: 17px;
+}
+
+#tip{
+    display: none;
+}
+
+#showTotalAmountToPay{
+    display: flex;
+}
+
+#billSplit,#totalTip,#totalAmount{
+    background-color:  #FDE49E;
+    margin: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    border: #AF8F6F;
+    color: black;
+}
+
+
+@media all and (max-width:500px){
+    .picture1, .picture2{
+        display: none;
+    }
+    #container{
+        width: 400px;
+        height: 570px;
+    }
+
+    #billSplit, #totalTip, #totalAmount{
+        margin: 5px;
+    }
+
+    form{
+        margin: 0px;
+    }
+}
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>Let's split our Bill!</h1>
+        <div class="images">
+            <img class="picture1" src="dish1-Photoroom.png" width="60px" height="80px">
+            <img class="picture2"src="dish2-Photoroom.png" width="60px" height="80px">
+        </div>
+        <form>
+            <p>Bill</p>
+            <span>💲
+            <input type="text" id="bill" placeholder="Bill...">
+            </span>
+            <p>Number of people</p>
+            <span>👨‍👩‍👧‍👧
+                <input type="text" id="people" placeholder="How many people?">
+            </span>
+            <p>Did you like our service?</p>
+            <button id="addTip">Add a tip!</button>
+            <select id="tip">
+                <option disabled>Select an option</option>
+                <option value="0.30">Wow! 30% ♥️</option>
+                <option value="0.20">Good service! 20% 💛</option>
+                <option value="0.05">It was OK! 10% 🤍</option>
+                <option value="0.00">No tip! 🙅🏻</option>
+            </select>
+                <button id="btn">Calculate</button>
+        </form>
+
+        <div id="showTotalAmountToPay">
+            <div id="billSplit">
+                <p>Bill</p>
+                <span>$</span>
+                <span id="dividedBill"></span>
+                <span>per person</span>
+            </div>
+            <div id="totalTip">
+                <p>Tip</p>
+                <span>$</span>
+                <span id="dividedTip"></span>
+                <span>per person</span>
+            </div>
+            <div id="totalAmount">
+                <p>Total</p>
+                <span>$</span>
+                <span id="billAndTip"></span>
+                <span>per person</span>
+            </div>
+        </div>
+    </div>
+  
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="index.js"></script>
+</body>
+</html>
